@@ -5,6 +5,10 @@ Companion to [speech-to-au](https://github.com/98shy/speech-to-au) (English-trai
 
 Status: work in progress. Results below are not final and the KPI definition is still to be agreed.
 
+## Attribution
+본 결과물은 과학기술정보통신부와 한국지능정보사회진흥원의 「지능정보산업 인프라 조성」 사업의 결과물인 AI 허브 데이터(K-MIND_Dyadic, Olkavs)를 이용하여 학습되었습니다.
+This work was trained on AI Hub datasets (K-MIND_Dyadic, Olkavs), results of the "Intelligent Information Industry Infrastructure" project funded by the Ministry of Science and ICT and run by NIA (한국지능정보사회진흥원).
+
 ## Using the model
 `deploy/` is a self-contained inference package (10-fold TCN ensemble, AU12/25/26). See [deploy/README.md](deploy/README.md) for usage and limitations.
 

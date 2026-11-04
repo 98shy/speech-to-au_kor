@@ -46,9 +46,13 @@ different set, so every K-MIND set was seen in training by 9 of the 10 models. T
 - Output intensities are compressed toward the mean (regression to the mean); expect smaller range than OpenFace.
 - The unit/scale is OpenFace AU_r, not mocap distances or blendshape weights; map to your rig accordingly.
 
-## Data terms
-The checkpoints are derived from AI Hub datasets (K-MIND_Dyadic, Olkavs). Check their terms of use before redistributing
-or using the models outside the project.
+## Data terms and attribution
+본 결과물은 과학기술정보통신부와 한국지능정보사회진흥원의 「지능정보산업 인프라 조성」 사업의 결과물인 AI 허브 데이터(K-MIND_Dyadic, Olkavs)를 이용하여 학습되었습니다.
+This work was trained on AI Hub datasets (K-MIND_Dyadic, Olkavs), results of the "Intelligent Information Industry Infrastructure" project funded by the Ministry of Science and ICT and run by NIA (한국지능정보사회진흥원).
+
+The AI Hub terms of use restrict providing the data to unapproved parties and require a separate agreement for overseas use or
+transfer. This repository contains no raw data, labels or features, only models trained on them. Whether redistributing trained weights
+is covered is not stated in the terms; keep this repository **private / team-internal** unless that is confirmed with AI Hub.
 
 ## Sanity check
 Features from `audio_feature_extractor.py` on a K-MIND wav match the stored training features (frame-wise correlation 0.9994),
