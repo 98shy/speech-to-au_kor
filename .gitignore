@@ -1,6 +1,7 @@
 __pycache__/
 *.pyc
 *.pt
+!deploy/checkpoints/*.pt
 *.npy
 *.wav
 *.mp4

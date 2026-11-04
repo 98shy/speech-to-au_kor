@@ -136,6 +136,16 @@ def predict(u):
 def pcc(a, b): return float(np.corrcoef(a, b)[0, 1]) if len(a) > 2 and a.std() > 1e-9 and b.std() > 1e-9 else float("nan")
 
 
+if os.environ.get("EXPORT_ONLY"):  # deploy checkpoint: weights + the normalisation stats recomputed from this run's training set; prints test PCC as a sanity check
+    _tag = f"{DS}_{ARCH}_{INIT}" + (f"_fold{FOLD}" if FOLD is not None else "") + TAGX
+    model.load_state_dict(torch.load(os.path.join(EXP, "korean_train", _tag + ".pt"), map_location=dev)); model.eval()
+    out_p = os.environ["EXPORT_ONLY"]
+    torch.save(dict(model_state=model.state_dict(), mean=mean, std=std, ymean=ymean, ystd=ystd, input_dim=FDIM, target_aus=AUS, arch=ARCH, source=_tag), out_p)
+    P = [predict(u) for u in units["test"] if u["ds"] == "kmind"]; us = [u for u in units["test"] if u["ds"] == "kmind"]
+    Pt = np.concatenate([p[u["m"]] for p, u in zip(P, us)]); Yt = np.concatenate([u["y"][u["m"]] for u in us])
+    print("EXPORT", out_p, "kmind test PCC", {a: round(pcc(Pt[:, i], Yt[:, i]), 3) for i, a in enumerate(AUS)}); sys.exit(0)
+
+
 def f1(yt, yp):
     tp = int((yt & yp).sum()); d = 2 * tp + int((~yt & yp).sum()) + int((yt & ~yp).sum()); return 2 * tp / d if d else float("nan")
 

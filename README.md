@@ -5,11 +5,14 @@ Companion to [speech-to-au](https://github.com/98shy/speech-to-au) (English-trai
 
 Status: work in progress. Results below are not final and the KPI definition is still to be agreed.
 
+## Using the model
+`deploy/` is a self-contained inference package (10-fold TCN ensemble, AU12/25/26). See [deploy/README.md](deploy/README.md) for usage and limitations.
+
 ## Data (not included)
 - K-MIND_Dyadic SET001-010 and Olkavs (AI Hub), audio only used as input.
 - Labels are **OpenFace 2.2.0 pseudo-labels** (AU_r intensity, AU_c occurrence) extracted from the videos, not expert FACS.
 - WavLM Base+ features (frozen, resampled to 25 fps) are extracted with `audio_feature_extractor.py`.
-- Raw data, labels, features and checkpoints (`*.pt`) are excluded by `.gitignore`.
+- Raw data, labels and features are excluded by `.gitignore`. Only the 10 deploy checkpoints (`deploy/checkpoints/`) are included.
 
 ## Contents
 - `train_korean.py` - training/eval: `python train_korean.py <kmind|olkavs|joint> <tcn|mamba|rnn> [scratch|finetune] [epochs] [fold]`
