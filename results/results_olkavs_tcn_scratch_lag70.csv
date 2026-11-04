@@ -1,0 +1,3 @@
+dataset,run,au,n_test,pcc,mae,prev_c,f1_c,macroF1_c,always_active_f1_c,f1_t0.5,pos_t0.5,f1_t1.0,pos_t1.0,f1_t2.0,pos_t2.0
+olkavs,olkavs_tcn_scratch_lag70,AU25,63026,0.42,0.413,0.628,0.666,0.653,0.771,0.588,0.644,0.011,0.305,0.0,0.0
+olkavs,olkavs_tcn_scratch_lag70,AU26,63026,0.261,0.355,0.5,0.427,0.531,0.667,0.614,0.629,0.25,0.184,0.0,0.001

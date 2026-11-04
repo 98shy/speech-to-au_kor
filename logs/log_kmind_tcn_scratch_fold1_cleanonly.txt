@@ -1,0 +1,26 @@
+train 10 units 98466 frames 35173 masked-in
+val 12 units 108308 frames 45082 masked-in
+test 8 units 104676 frames 34385 masked-in
+label mean [1.2  0.71 0.47] std [0.69 0.69 0.54]
+ep1 train_loss 0.881 val_pcc 0.319
+ep2 train_loss 0.709 val_pcc 0.359
+ep3 train_loss 0.621 val_pcc 0.359
+ep4 train_loss 0.589 val_pcc 0.355
+ep5 train_loss 0.555 val_pcc 0.340
+ep6 train_loss 0.514 val_pcc 0.332
+ep7 train_loss 0.462 val_pcc 0.372
+ep8 train_loss 0.437 val_pcc 0.358
+ep9 train_loss 0.408 val_pcc 0.376
+ep10 train_loss 0.387 val_pcc 0.330
+ep11 train_loss 0.359 val_pcc 0.350
+ep12 train_loss 0.350 val_pcc 0.345
+ep13 train_loss 0.309 val_pcc 0.344
+ep14 train_loss 0.304 val_pcc 0.338
+ep15 train_loss 0.278 val_pcc 0.339
+{'dataset': 'kmind', 'run': 'kmind_tcn_scratch_fold1_cleanonly', 'au': 'AU12', 'n_test': 34385, 'pcc': 0.414, 'mae': 0.597, 'prev_c': 0.558, 'f1_c': 0.711, 'macroF1_c': 0.513, 'always_active_f1_c': 0.716, 'f1_t0.5': 0.827, 'pos_t0.5': 0.712, 'f1_t1.0': 0.657, 'pos_t1.0': 0.498, 'f1_t2.0': 0.283, 'pos_t2.0': 0.145}
+{'dataset': 'kmind', 'run': 'kmind_tcn_scratch_fold1_cleanonly', 'au': 'AU25', 'n_test': 34385, 'pcc': 0.475, 'mae': 0.479, 'prev_c': 0.222, 'f1_c': 0.468, 'macroF1_c': 0.597, 'always_active_f1_c': 0.364, 'f1_t0.5': 0.702, 'pos_t0.5': 0.491, 'f1_t1.0': 0.53, 'pos_t1.0': 0.308, 'f1_t2.0': 0.044, 'pos_t2.0': 0.031}
+{'dataset': 'kmind', 'run': 'kmind_tcn_scratch_fold1_cleanonly', 'au': 'AU26', 'n_test': 34385, 'pcc': 0.333, 'mae': 0.45, 'prev_c': 0.165, 'f1_c': 0.334, 'macroF1_c': 0.507, 'always_active_f1_c': 0.283, 'f1_t0.5': 0.534, 'pos_t0.5': 0.427, 'f1_t1.0': 0.237, 'pos_t1.0': 0.208, 'f1_t2.0': 0.007, 'pos_t2.0': 0.039}
+[kmind] mF1 (AU_c, 3 AUs) = 0.504   macro-F1 = 0.539   always-active = 0.454
+[kmind] mF1 (intensity>=0.5) = 0.688
+[kmind] mF1 (intensity>=1.0) = 0.475
+[kmind] mF1 (intensity>=2.0) = 0.111

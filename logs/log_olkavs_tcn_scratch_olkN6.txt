@@ -1,0 +1,18 @@
+train 6 units 45577 frames 34129 masked-in
+val 2 units 15256 frames 12384 masked-in
+test 12 units 90893 frames 63026 masked-in
+label mean [0.   0.45 0.51] std [1.   0.34 0.47]
+ep1 train_loss 0.768 val_pcc 0.517
+ep2 train_loss 0.605 val_pcc 0.537
+ep3 train_loss 0.515 val_pcc 0.527
+ep4 train_loss 0.479 val_pcc 0.527
+ep5 train_loss 0.442 val_pcc 0.518
+ep6 train_loss 0.386 val_pcc 0.515
+ep7 train_loss 0.331 val_pcc 0.513
+ep8 train_loss 0.293 val_pcc 0.487
+{'dataset': 'olkavs', 'run': 'olkavs_tcn_scratch_olkN6', 'au': 'AU25', 'n_test': 63026, 'pcc': 0.42, 'mae': 0.398, 'prev_c': 0.636, 'f1_c': 0.693, 'macroF1_c': 0.667, 'always_active_f1_c': 0.778, 'f1_t0.5': 0.64, 'pos_t0.5': 0.651, 'f1_t1.0': 0.024, 'pos_t1.0': 0.308, 'f1_t2.0': 0.0, 'pos_t2.0': 0.0}
+{'dataset': 'olkavs', 'run': 'olkavs_tcn_scratch_olkN6', 'au': 'AU26', 'n_test': 63026, 'pcc': 0.216, 'mae': 0.366, 'prev_c': 0.505, 'f1_c': 0.451, 'macroF1_c': 0.533, 'always_active_f1_c': 0.671, 'f1_t0.5': 0.594, 'pos_t0.5': 0.635, 'f1_t1.0': 0.218, 'pos_t1.0': 0.184, 'f1_t2.0': 0.0, 'pos_t2.0': 0.001}
+[olkavs] mF1 (AU_c, 2 AUs) = 0.572   macro-F1 = 0.600   always-active = 0.725
+[olkavs] mF1 (intensity>=0.5) = 0.617
+[olkavs] mF1 (intensity>=1.0) = 0.121
+[olkavs] mF1 (intensity>=2.0) = 0.000

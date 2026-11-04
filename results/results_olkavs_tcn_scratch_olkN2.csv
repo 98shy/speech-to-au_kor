@@ -1,0 +1,3 @@
+dataset,run,au,n_test,pcc,mae,prev_c,f1_c,macroF1_c,always_active_f1_c,f1_t0.5,pos_t0.5,f1_t1.0,pos_t1.0,f1_t2.0,pos_t2.0
+olkavs,olkavs_tcn_scratch_olkN2,AU25,63026,0.447,0.395,0.636,0.71,0.681,0.778,0.667,0.651,0.01,0.308,0.0,0.0
+olkavs,olkavs_tcn_scratch_olkN2,AU26,63026,0.143,0.381,0.505,0.383,0.497,0.671,0.641,0.635,0.239,0.184,0.0,0.001

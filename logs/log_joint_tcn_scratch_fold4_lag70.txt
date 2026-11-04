@@ -1,0 +1,38 @@
+train 40 units 378668 frames 169558 masked-in
+val 14 units 113712 frames 51729 masked-in
+test 24 units 199201 frames 108108 masked-in
+label mean [1.15 0.64 0.54] std [0.78 0.64 0.57]
+ep1 train_loss 0.865 val_pcc 0.413
+ep2 train_loss 0.755 val_pcc 0.433
+ep3 train_loss 0.713 val_pcc 0.436
+ep4 train_loss 0.663 val_pcc 0.421
+ep5 train_loss 0.664 val_pcc 0.447
+ep6 train_loss 0.628 val_pcc 0.426
+ep7 train_loss 0.599 val_pcc 0.436
+ep8 train_loss 0.574 val_pcc 0.442
+ep9 train_loss 0.540 val_pcc 0.452
+ep10 train_loss 0.533 val_pcc 0.448
+ep11 train_loss 0.501 val_pcc 0.436
+ep12 train_loss 0.483 val_pcc 0.425
+ep13 train_loss 0.466 val_pcc 0.436
+ep14 train_loss 0.438 val_pcc 0.436
+ep15 train_loss 0.445 val_pcc 0.453
+ep16 train_loss 0.434 val_pcc 0.443
+ep17 train_loss 0.419 val_pcc 0.446
+ep18 train_loss 0.390 val_pcc 0.438
+ep19 train_loss 0.382 val_pcc 0.442
+ep20 train_loss 0.365 val_pcc 0.452
+ep21 train_loss 0.364 val_pcc 0.431
+{'dataset': 'kmind', 'run': 'joint_tcn_scratch_fold4_lag70', 'au': 'AU12', 'n_test': 45082, 'pcc': 0.069, 'mae': 0.93, 'prev_c': 0.396, 'f1_c': 0.541, 'macroF1_c': 0.473, 'always_active_f1_c': 0.567, 'f1_t0.5': 0.737, 'pos_t0.5': 0.649, 'f1_t1.0': 0.388, 'pos_t1.0': 0.546, 'f1_t2.0': 0.045, 'pos_t2.0': 0.254}
+{'dataset': 'kmind', 'run': 'joint_tcn_scratch_fold4_lag70', 'au': 'AU25', 'n_test': 45082, 'pcc': 0.501, 'mae': 0.45, 'prev_c': 0.271, 'f1_c': 0.554, 'macroF1_c': 0.628, 'always_active_f1_c': 0.427, 'f1_t0.5': 0.685, 'pos_t0.5': 0.443, 'f1_t1.0': 0.489, 'pos_t1.0': 0.232, 'f1_t2.0': 0.117, 'pos_t2.0': 0.041}
+{'dataset': 'kmind', 'run': 'joint_tcn_scratch_fold4_lag70', 'au': 'AU26', 'n_test': 45082, 'pcc': 0.409, 'mae': 0.468, 'prev_c': 0.241, 'f1_c': 0.451, 'macroF1_c': 0.538, 'always_active_f1_c': 0.389, 'f1_t0.5': 0.595, 'pos_t0.5': 0.411, 'f1_t1.0': 0.356, 'pos_t1.0': 0.215, 'f1_t2.0': 0.056, 'pos_t2.0': 0.046}
+[kmind] mF1 (AU_c, 3 AUs) = 0.515   macro-F1 = 0.546   always-active = 0.461
+[kmind] mF1 (intensity>=0.5) = 0.672
+[kmind] mF1 (intensity>=1.0) = 0.411
+[kmind] mF1 (intensity>=2.0) = 0.073
+{'dataset': 'olkavs', 'run': 'joint_tcn_scratch_fold4_lag70', 'au': 'AU25', 'n_test': 63026, 'pcc': 0.485, 'mae': 0.351, 'prev_c': 0.628, 'f1_c': 0.792, 'macroF1_c': 0.723, 'always_active_f1_c': 0.771, 'f1_t0.5': 0.742, 'pos_t0.5': 0.644, 'f1_t1.0': 0.154, 'pos_t1.0': 0.305, 'f1_t2.0': 0.0, 'pos_t2.0': 0.0}
+{'dataset': 'olkavs', 'run': 'joint_tcn_scratch_fold4_lag70', 'au': 'AU26', 'n_test': 63026, 'pcc': 0.297, 'mae': 0.353, 'prev_c': 0.5, 'f1_c': 0.52, 'macroF1_c': 0.567, 'always_active_f1_c': 0.667, 'f1_t0.5': 0.576, 'pos_t0.5': 0.629, 'f1_t1.0': 0.255, 'pos_t1.0': 0.184, 'f1_t2.0': 0.0, 'pos_t2.0': 0.001}
+[olkavs] mF1 (AU_c, 2 AUs) = 0.656   macro-F1 = 0.645   always-active = 0.719
+[olkavs] mF1 (intensity>=0.5) = 0.659
+[olkavs] mF1 (intensity>=1.0) = 0.205
+[olkavs] mF1 (intensity>=2.0) = 0.000

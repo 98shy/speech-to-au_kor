@@ -1,0 +1,9 @@
+dataset,condition,au,model,subset,n_frames,n_units,pcc_pooled,pcc_mean_per_unit,icc31,mae,true_mean,pred_mean,f1_t0.5,f1_t1.0,macroF1_t0.5,macroF1_t1.0,pos_true_t0.5,pos_true_t1.0
+Olkavs(val),wav_A,AU12,CREMAD/mamba,all,30211,4,-0.012,-0.019,-0.007,0.328,0.006,0.325,0.011,0.0,0.447,0.492,0.006,0.006
+Olkavs(val),wav_A,AU12,CREMAD/mamba,speech,21268,4,-0.005,-0.013,-0.003,0.35,0.006,0.348,0.012,0.0,0.444,0.493,0.006,0.006
+Olkavs(val),wav_A,AU17,CREMAD/cause_rnn,all,30211,4,-0.071,-0.073,-0.06,0.56,0.732,0.386,0.371,0.04,0.364,0.231,0.733,0.733
+Olkavs(val),wav_A,AU17,CREMAD/cause_rnn,speech,21268,4,0.091,0.093,0.079,0.569,0.796,0.349,0.343,0.048,0.345,0.194,0.796,0.796
+Olkavs(val),wav_A,AU25,GRID/mamba,all,30211,4,0.335,0.336,0.298,0.408,0.492,0.515,0.635,0.177,0.644,0.428,0.492,0.492
+Olkavs(val),wav_A,AU25,GRID/mamba,speech,21268,4,0.14,0.142,0.124,0.449,0.639,0.579,0.651,0.173,0.557,0.353,0.639,0.639
+Olkavs(val),wav_A,AU26,GRID/tcn,all,30211,4,0.179,0.18,0.134,0.376,0.347,0.232,0.234,0.021,0.502,0.406,0.346,0.346
+Olkavs(val),wav_A,AU26,GRID/tcn,speech,21268,4,0.016,0.016,0.012,0.475,0.472,0.276,0.235,0.02,0.446,0.356,0.471,0.471

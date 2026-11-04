@@ -1,0 +1,36 @@
+train 126 units 1080841 frames 555337 masked-in
+val 22 units 196567 frames 115106 masked-in
+test 36 units 290368 frames 193437 masked-in
+label mean [0.95 0.7  0.58] std [0.79 0.66 0.56]
+ep1 train_loss 0.790 val_pcc 0.428
+ep2 train_loss 0.710 val_pcc 0.418
+ep3 train_loss 0.678 val_pcc 0.404
+ep4 train_loss 0.662 val_pcc 0.425
+ep5 train_loss 0.635 val_pcc 0.411
+ep6 train_loss 0.613 val_pcc 0.418
+ep7 train_loss 0.597 val_pcc 0.411
+{'dataset': 'kmind', 'run': 'joint_tcn_scratch_fold7_all10', 'au': 'AU12', 'n_test': 44114, 'pcc': 0.262, 'mae': 0.644, 'prev_c': 0.114, 'f1_c': 0.34, 'macroF1_c': 0.625, 'always_active_f1_c': 0.204, 'f1_t0.5': 0.956, 'pos_t0.5': 0.916, 'f1_t1.0': 0.671, 'pos_t1.0': 0.681, 'f1_t2.0': 0.041, 'pos_t2.0': 0.23}
+{'dataset': 'kmind', 'run': 'joint_tcn_scratch_fold7_all10', 'au': 'AU25', 'n_test': 44114, 'pcc': 0.415, 'mae': 0.592, 'prev_c': 0.309, 'f1_c': 0.549, 'macroF1_c': 0.559, 'always_active_f1_c': 0.472, 'f1_t0.5': 0.723, 'pos_t0.5': 0.547, 'f1_t1.0': 0.364, 'pos_t1.0': 0.378, 'f1_t2.0': 0.0, 'pos_t2.0': 0.101}
+{'dataset': 'kmind', 'run': 'joint_tcn_scratch_fold7_all10', 'au': 'AU26', 'n_test': 44114, 'pcc': 0.344, 'mae': 0.462, 'prev_c': 0.239, 'f1_c': 0.435, 'macroF1_c': 0.446, 'always_active_f1_c': 0.386, 'f1_t0.5': 0.547, 'pos_t0.5': 0.342, 'f1_t1.0': 0.274, 'pos_t1.0': 0.154, 'f1_t2.0': 0.0, 'pos_t2.0': 0.027}
+[kmind] mF1 (AU_c, 3 AUs) = 0.441   macro-F1 = 0.543   always-active = 0.354
+[kmind] mF1 (intensity>=0.5) = 0.742
+[kmind] mF1 (intensity>=1.0) = 0.436
+[kmind] mF1 (intensity>=2.0) = 0.014
+{'dataset': 'olkavs', 'run': 'joint_tcn_scratch_fold7_all10', 'au': 'AU25', 'n_test': 149323, 'pcc': 0.499, 'mae': 0.41, 'prev_c': 0.477, 'f1_c': 0.674, 'macroF1_c': 0.693, 'always_active_f1_c': 0.646, 'f1_t0.5': 0.736, 'pos_t0.5': 0.583, 'f1_t1.0': 0.181, 'pos_t1.0': 0.31, 'f1_t2.0': 0.0, 'pos_t2.0': 0.026}
+{'dataset': 'olkavs', 'run': 'joint_tcn_scratch_fold7_all10', 'au': 'AU26', 'n_test': 149323, 'pcc': 0.419, 'mae': 0.325, 'prev_c': 0.342, 'f1_c': 0.328, 'macroF1_c': 0.561, 'always_active_f1_c': 0.51, 'f1_t0.5': 0.631, 'pos_t0.5': 0.513, 'f1_t1.0': 0.223, 'pos_t1.0': 0.166, 'f1_t2.0': 0.005, 'pos_t2.0': 0.003}
+[olkavs] mF1 (AU_c, 2 AUs) = 0.501   macro-F1 = 0.627   always-active = 0.578
+[olkavs] mF1 (intensity>=0.5) = 0.683
+[olkavs] mF1 (intensity>=1.0) = 0.202
+[olkavs] mF1 (intensity>=2.0) = 0.003
+{'dataset': 'olkavs_C221', 'run': 'joint_tcn_scratch_fold7_all10', 'au': 'AU25', 'n_test': 63026, 'pcc': 0.458, 'mae': 0.354, 'prev_c': 0.636, 'f1_c': 0.72, 'macroF1_c': 0.684, 'always_active_f1_c': 0.778, 'f1_t0.5': 0.746, 'pos_t0.5': 0.651, 'f1_t1.0': 0.123, 'pos_t1.0': 0.308, 'f1_t2.0': 0.0, 'pos_t2.0': 0.0}
+{'dataset': 'olkavs_C221', 'run': 'joint_tcn_scratch_fold7_all10', 'au': 'AU26', 'n_test': 63026, 'pcc': 0.315, 'mae': 0.32, 'prev_c': 0.505, 'f1_c': 0.261, 'macroF1_c': 0.464, 'always_active_f1_c': 0.671, 'f1_t0.5': 0.612, 'pos_t0.5': 0.635, 'f1_t1.0': 0.172, 'pos_t1.0': 0.184, 'f1_t2.0': 0.0, 'pos_t2.0': 0.001}
+[olkavs_C221] mF1 (AU_c, 2 AUs) = 0.490   macro-F1 = 0.574   always-active = 0.725
+[olkavs_C221] mF1 (intensity>=0.5) = 0.679
+[olkavs_C221] mF1 (intensity>=1.0) = 0.147
+[olkavs_C221] mF1 (intensity>=2.0) = 0.000
+{'dataset': 'olkavs_E074', 'run': 'joint_tcn_scratch_fold7_all10', 'au': 'AU25', 'n_test': 86297, 'pcc': 0.522, 'mae': 0.451, 'prev_c': 0.36, 'f1_c': 0.628, 'macroF1_c': 0.688, 'always_active_f1_c': 0.529, 'f1_t0.5': 0.728, 'pos_t0.5': 0.532, 'f1_t1.0': 0.219, 'pos_t1.0': 0.311, 'f1_t2.0': 0.0, 'pos_t2.0': 0.044}
+{'dataset': 'olkavs_E074', 'run': 'joint_tcn_scratch_fold7_all10', 'au': 'AU26', 'n_test': 86297, 'pcc': 0.505, 'mae': 0.328, 'prev_c': 0.223, 'f1_c': 0.413, 'macroF1_c': 0.643, 'always_active_f1_c': 0.365, 'f1_t0.5': 0.648, 'pos_t0.5': 0.424, 'f1_t1.0': 0.265, 'pos_t1.0': 0.152, 'f1_t2.0': 0.005, 'pos_t2.0': 0.004}
+[olkavs_E074] mF1 (AU_c, 2 AUs) = 0.520   macro-F1 = 0.665   always-active = 0.447
+[olkavs_E074] mF1 (intensity>=0.5) = 0.688
+[olkavs_E074] mF1 (intensity>=1.0) = 0.242
+[olkavs_E074] mF1 (intensity>=2.0) = 0.003

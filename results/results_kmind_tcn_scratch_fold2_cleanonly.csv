@@ -1,0 +1,4 @@
+dataset,run,au,n_test,pcc,mae,prev_c,f1_c,macroF1_c,always_active_f1_c,f1_t0.5,pos_t0.5,f1_t1.0,pos_t1.0,f1_t2.0,pos_t2.0
+kmind,kmind_tcn_scratch_fold2_cleanonly,AU12,45082,0.325,0.847,0.396,0.583,0.422,0.567,0.742,0.649,0.444,0.546,0.038,0.254
+kmind,kmind_tcn_scratch_fold2_cleanonly,AU25,45082,0.496,0.434,0.271,0.542,0.64,0.427,0.669,0.443,0.437,0.232,0.068,0.041
+kmind,kmind_tcn_scratch_fold2_cleanonly,AU26,45082,0.408,0.464,0.241,0.46,0.591,0.389,0.588,0.411,0.309,0.215,0.025,0.046

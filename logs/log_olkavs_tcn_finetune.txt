@@ -1,0 +1,26 @@
+train 10 units 77420 frames 59635 masked-in
+val 2 units 15256 frames 12384 masked-in
+test 12 units 90893 frames 63026 masked-in
+label mean [0.   0.44 0.49] std [1.   0.34 0.45]
+finetune: loaded 52 / 54 tensors
+ep1 train_loss 0.938 val_pcc 0.388
+ep2 train_loss 0.818 val_pcc 0.493
+ep3 train_loss 0.728 val_pcc 0.526
+ep4 train_loss 0.698 val_pcc 0.536
+ep5 train_loss 0.658 val_pcc 0.547
+ep6 train_loss 0.651 val_pcc 0.548
+ep7 train_loss 0.613 val_pcc 0.554
+ep8 train_loss 0.613 val_pcc 0.554
+ep9 train_loss 0.590 val_pcc 0.559
+ep10 train_loss 0.581 val_pcc 0.554
+ep11 train_loss 0.574 val_pcc 0.555
+ep12 train_loss 0.561 val_pcc 0.555
+ep13 train_loss 0.569 val_pcc 0.558
+ep14 train_loss 0.540 val_pcc 0.553
+ep15 train_loss 0.523 val_pcc 0.553
+{'dataset': 'olkavs', 'run': 'olkavs_tcn_finetune', 'au': 'AU25', 'n_test': 63026, 'pcc': 0.413, 'mae': 0.379, 'prev_c': 0.636, 'f1_c': 0.743, 'macroF1_c': 0.694, 'always_active_f1_c': 0.778, 'f1_t0.5': 0.691, 'pos_t0.5': 0.651, 'f1_t1.0': 0.039, 'pos_t1.0': 0.308, 'f1_t2.0': 0.0, 'pos_t2.0': 0.0}
+{'dataset': 'olkavs', 'run': 'olkavs_tcn_finetune', 'au': 'AU26', 'n_test': 63026, 'pcc': 0.252, 'mae': 0.358, 'prev_c': 0.505, 'f1_c': 0.515, 'macroF1_c': 0.559, 'always_active_f1_c': 0.671, 'f1_t0.5': 0.638, 'pos_t0.5': 0.635, 'f1_t1.0': 0.276, 'pos_t1.0': 0.184, 'f1_t2.0': 0.0, 'pos_t2.0': 0.001}
+[olkavs] mF1 (AU_c, 2 AUs) = 0.629   macro-F1 = 0.627   always-active = 0.725
+[olkavs] mF1 (intensity>=0.5) = 0.664
+[olkavs] mF1 (intensity>=1.0) = 0.158
+[olkavs] mF1 (intensity>=2.0) = 0.000

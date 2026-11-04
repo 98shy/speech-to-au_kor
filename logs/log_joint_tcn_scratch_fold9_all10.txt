@@ -1,0 +1,41 @@
+train 124 units 1089075 frames 556356 masked-in
+val 24 units 194899 frames 115797 masked-in
+test 36 units 283802 frames 191727 masked-in
+label mean [1.02 0.72 0.57] std [0.79 0.68 0.57]
+ep1 train_loss 0.822 val_pcc 0.444
+ep2 train_loss 0.743 val_pcc 0.418
+ep3 train_loss 0.711 val_pcc 0.441
+ep4 train_loss 0.676 val_pcc 0.442
+ep5 train_loss 0.649 val_pcc 0.421
+ep6 train_loss 0.628 val_pcc 0.446
+ep7 train_loss 0.616 val_pcc 0.425
+ep8 train_loss 0.606 val_pcc 0.439
+ep9 train_loss 0.571 val_pcc 0.433
+ep10 train_loss 0.568 val_pcc 0.440
+ep11 train_loss 0.555 val_pcc 0.435
+ep12 train_loss 0.535 val_pcc 0.414
+{'dataset': 'kmind', 'run': 'joint_tcn_scratch_fold9_all10', 'au': 'AU12', 'n_test': 42404, 'pcc': 0.291, 'mae': 0.747, 'prev_c': 0.105, 'f1_c': 0.189, 'macroF1_c': 0.259, 'always_active_f1_c': 0.19, 'f1_t0.5': 0.545, 'pos_t0.5': 0.366, 'f1_t1.0': 0.303, 'pos_t1.0': 0.148, 'f1_t2.0': 0.151, 'pos_t2.0': 0.053}
+{'dataset': 'kmind', 'run': 'joint_tcn_scratch_fold9_all10', 'au': 'AU25', 'n_test': 42404, 'pcc': 0.46, 'mae': 0.576, 'prev_c': 0.444, 'f1_c': 0.697, 'macroF1_c': 0.7, 'always_active_f1_c': 0.615, 'f1_t0.5': 0.745, 'pos_t0.5': 0.585, 'f1_t1.0': 0.401, 'pos_t1.0': 0.384, 'f1_t2.0': 0.007, 'pos_t2.0': 0.105}
+{'dataset': 'kmind', 'run': 'joint_tcn_scratch_fold9_all10', 'au': 'AU26', 'n_test': 42404, 'pcc': 0.38, 'mae': 0.404, 'prev_c': 0.278, 'f1_c': 0.493, 'macroF1_c': 0.558, 'always_active_f1_c': 0.435, 'f1_t0.5': 0.573, 'pos_t0.5': 0.486, 'f1_t1.0': 0.192, 'pos_t1.0': 0.214, 'f1_t2.0': 0.004, 'pos_t2.0': 0.022}
+[kmind] mF1 (AU_c, 3 AUs) = 0.460   macro-F1 = 0.506   always-active = 0.413
+[kmind] mF1 (intensity>=0.5) = 0.621
+[kmind] mF1 (intensity>=1.0) = 0.299
+[kmind] mF1 (intensity>=2.0) = 0.054
+{'dataset': 'olkavs', 'run': 'joint_tcn_scratch_fold9_all10', 'au': 'AU25', 'n_test': 149323, 'pcc': 0.496, 'mae': 0.419, 'prev_c': 0.477, 'f1_c': 0.643, 'macroF1_c': 0.69, 'always_active_f1_c': 0.646, 'f1_t0.5': 0.695, 'pos_t0.5': 0.583, 'f1_t1.0': 0.14, 'pos_t1.0': 0.31, 'f1_t2.0': 0.0, 'pos_t2.0': 0.026}
+{'dataset': 'olkavs', 'run': 'joint_tcn_scratch_fold9_all10', 'au': 'AU26', 'n_test': 149323, 'pcc': 0.438, 'mae': 0.325, 'prev_c': 0.342, 'f1_c': 0.353, 'macroF1_c': 0.575, 'always_active_f1_c': 0.51, 'f1_t0.5': 0.574, 'pos_t0.5': 0.513, 'f1_t1.0': 0.163, 'pos_t1.0': 0.166, 'f1_t2.0': 0.014, 'pos_t2.0': 0.003}
+[olkavs] mF1 (AU_c, 2 AUs) = 0.498   macro-F1 = 0.632   always-active = 0.578
+[olkavs] mF1 (intensity>=0.5) = 0.634
+[olkavs] mF1 (intensity>=1.0) = 0.152
+[olkavs] mF1 (intensity>=2.0) = 0.007
+{'dataset': 'olkavs_C221', 'run': 'joint_tcn_scratch_fold9_all10', 'au': 'AU25', 'n_test': 63026, 'pcc': 0.421, 'mae': 0.372, 'prev_c': 0.636, 'f1_c': 0.67, 'macroF1_c': 0.651, 'always_active_f1_c': 0.778, 'f1_t0.5': 0.708, 'pos_t0.5': 0.651, 'f1_t1.0': 0.096, 'pos_t1.0': 0.308, 'f1_t2.0': 0.0, 'pos_t2.0': 0.0}
+{'dataset': 'olkavs_C221', 'run': 'joint_tcn_scratch_fold9_all10', 'au': 'AU26', 'n_test': 63026, 'pcc': 0.339, 'mae': 0.337, 'prev_c': 0.505, 'f1_c': 0.312, 'macroF1_c': 0.49, 'always_active_f1_c': 0.671, 'f1_t0.5': 0.567, 'pos_t0.5': 0.635, 'f1_t1.0': 0.132, 'pos_t1.0': 0.184, 'f1_t2.0': 0.0, 'pos_t2.0': 0.001}
+[olkavs_C221] mF1 (AU_c, 2 AUs) = 0.491   macro-F1 = 0.571   always-active = 0.725
+[olkavs_C221] mF1 (intensity>=0.5) = 0.637
+[olkavs_C221] mF1 (intensity>=1.0) = 0.114
+[olkavs_C221] mF1 (intensity>=2.0) = 0.000
+{'dataset': 'olkavs_E074', 'run': 'joint_tcn_scratch_fold9_all10', 'au': 'AU25', 'n_test': 86297, 'pcc': 0.534, 'mae': 0.454, 'prev_c': 0.36, 'f1_c': 0.613, 'macroF1_c': 0.703, 'always_active_f1_c': 0.529, 'f1_t0.5': 0.682, 'pos_t0.5': 0.532, 'f1_t1.0': 0.17, 'pos_t1.0': 0.311, 'f1_t2.0': 0.0, 'pos_t2.0': 0.044}
+{'dataset': 'olkavs_E074', 'run': 'joint_tcn_scratch_fold9_all10', 'au': 'AU26', 'n_test': 86297, 'pcc': 0.486, 'mae': 0.315, 'prev_c': 0.223, 'f1_c': 0.408, 'macroF1_c': 0.642, 'always_active_f1_c': 0.365, 'f1_t0.5': 0.582, 'pos_t0.5': 0.424, 'f1_t1.0': 0.19, 'pos_t1.0': 0.152, 'f1_t2.0': 0.016, 'pos_t2.0': 0.004}
+[olkavs_E074] mF1 (AU_c, 2 AUs) = 0.510   macro-F1 = 0.672   always-active = 0.447
+[olkavs_E074] mF1 (intensity>=0.5) = 0.632
+[olkavs_E074] mF1 (intensity>=1.0) = 0.180
+[olkavs_E074] mF1 (intensity>=2.0) = 0.008

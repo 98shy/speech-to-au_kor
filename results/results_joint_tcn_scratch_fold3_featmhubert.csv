@@ -1,0 +1,6 @@
+dataset,run,au,n_test,pcc,mae,prev_c,f1_c,macroF1_c,always_active_f1_c,f1_t0.5,pos_t0.5,f1_t1.0,pos_t1.0,f1_t2.0,pos_t2.0
+kmind,joint_tcn_scratch_fold3_featmhubert,AU12,34385,0.527,0.565,0.558,0.728,0.537,0.716,0.832,0.712,0.696,0.498,0.419,0.145
+kmind,joint_tcn_scratch_fold3_featmhubert,AU25,34385,0.504,0.447,0.222,0.484,0.624,0.364,0.687,0.491,0.458,0.308,0.171,0.031
+kmind,joint_tcn_scratch_fold3_featmhubert,AU26,34385,0.385,0.456,0.165,0.355,0.571,0.283,0.597,0.427,0.345,0.208,0.069,0.039
+olkavs,joint_tcn_scratch_fold3_featmhubert,AU25,63026,0.492,0.39,0.636,0.722,0.696,0.778,0.625,0.651,0.052,0.308,0.0,0.0
+olkavs,joint_tcn_scratch_fold3_featmhubert,AU26,63026,0.287,0.327,0.505,0.424,0.534,0.671,0.643,0.635,0.244,0.184,0.0,0.001

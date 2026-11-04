@@ -1,0 +1,37 @@
+train 128 units 1071745 frames 558638 masked-in
+val 24 units 204751 frames 121534 masked-in
+test 32 units 291280 frames 183708 masked-in
+AU12 excluded speakers (train, AU_c prev < 0.05 ): []
+label mean [0.93 0.73 0.58] std [0.75 0.69 0.57]
+ep1 train_loss 0.821 val_pcc 0.417
+ep2 train_loss 0.708 val_pcc 0.380
+ep3 train_loss 0.699 val_pcc 0.400
+ep4 train_loss 0.664 val_pcc 0.390
+ep5 train_loss 0.641 val_pcc 0.363
+ep6 train_loss 0.622 val_pcc 0.385
+ep7 train_loss 0.609 val_pcc 0.394
+{'dataset': 'kmind', 'run': 'joint_tcn_scratch_fold3_all10_au12f', 'au': 'AU12', 'n_test': 34385, 'pcc': 0.442, 'mae': 0.581, 'prev_c': 0.558, 'f1_c': 0.72, 'macroF1_c': 0.427, 'always_active_f1_c': 0.716, 'f1_t0.5': 0.827, 'pos_t0.5': 0.712, 'f1_t1.0': 0.641, 'pos_t1.0': 0.498, 'f1_t2.0': 0.287, 'pos_t2.0': 0.145}
+{'dataset': 'kmind', 'run': 'joint_tcn_scratch_fold3_all10_au12f', 'au': 'AU25', 'n_test': 34385, 'pcc': 0.478, 'mae': 0.478, 'prev_c': 0.222, 'f1_c': 0.467, 'macroF1_c': 0.614, 'always_active_f1_c': 0.364, 'f1_t0.5': 0.7, 'pos_t0.5': 0.491, 'f1_t1.0': 0.52, 'pos_t1.0': 0.308, 'f1_t2.0': 0.011, 'pos_t2.0': 0.031}
+{'dataset': 'kmind', 'run': 'joint_tcn_scratch_fold3_all10_au12f', 'au': 'AU26', 'n_test': 34385, 'pcc': 0.351, 'mae': 0.467, 'prev_c': 0.165, 'f1_c': 0.345, 'macroF1_c': 0.558, 'always_active_f1_c': 0.283, 'f1_t0.5': 0.607, 'pos_t0.5': 0.427, 'f1_t1.0': 0.243, 'pos_t1.0': 0.208, 'f1_t2.0': 0.0, 'pos_t2.0': 0.039}
+[kmind] mF1 (AU_c, 3 AUs) = 0.511   macro-F1 = 0.533   always-active = 0.454
+[kmind] mF1 (intensity>=0.5) = 0.711
+[kmind] mF1 (intensity>=1.0) = 0.468
+[kmind] mF1 (intensity>=2.0) = 0.099
+{'dataset': 'olkavs', 'run': 'joint_tcn_scratch_fold3_all10_au12f', 'au': 'AU25', 'n_test': 149323, 'pcc': 0.496, 'mae': 0.407, 'prev_c': 0.477, 'f1_c': 0.673, 'macroF1_c': 0.699, 'always_active_f1_c': 0.646, 'f1_t0.5': 0.73, 'pos_t0.5': 0.583, 'f1_t1.0': 0.26, 'pos_t1.0': 0.31, 'f1_t2.0': 0.0, 'pos_t2.0': 0.026}
+{'dataset': 'olkavs', 'run': 'joint_tcn_scratch_fold3_all10_au12f', 'au': 'AU26', 'n_test': 149323, 'pcc': 0.429, 'mae': 0.322, 'prev_c': 0.342, 'f1_c': 0.334, 'macroF1_c': 0.565, 'always_active_f1_c': 0.51, 'f1_t0.5': 0.647, 'pos_t0.5': 0.513, 'f1_t1.0': 0.199, 'pos_t1.0': 0.166, 'f1_t2.0': 0.0, 'pos_t2.0': 0.003}
+[olkavs] mF1 (AU_c, 2 AUs) = 0.504   macro-F1 = 0.632   always-active = 0.578
+[olkavs] mF1 (intensity>=0.5) = 0.689
+[olkavs] mF1 (intensity>=1.0) = 0.230
+[olkavs] mF1 (intensity>=2.0) = 0.000
+{'dataset': 'olkavs_C221', 'run': 'joint_tcn_scratch_fold3_all10_au12f', 'au': 'AU25', 'n_test': 63026, 'pcc': 0.48, 'mae': 0.349, 'prev_c': 0.636, 'f1_c': 0.728, 'macroF1_c': 0.694, 'always_active_f1_c': 0.778, 'f1_t0.5': 0.752, 'pos_t0.5': 0.651, 'f1_t1.0': 0.228, 'pos_t1.0': 0.308, 'f1_t2.0': 0.0, 'pos_t2.0': 0.0}
+{'dataset': 'olkavs_C221', 'run': 'joint_tcn_scratch_fold3_all10_au12f', 'au': 'AU26', 'n_test': 63026, 'pcc': 0.328, 'mae': 0.312, 'prev_c': 0.505, 'f1_c': 0.306, 'macroF1_c': 0.485, 'always_active_f1_c': 0.671, 'f1_t0.5': 0.657, 'pos_t0.5': 0.635, 'f1_t1.0': 0.178, 'pos_t1.0': 0.184, 'f1_t2.0': 0.0, 'pos_t2.0': 0.001}
+[olkavs_C221] mF1 (AU_c, 2 AUs) = 0.517   macro-F1 = 0.589   always-active = 0.725
+[olkavs_C221] mF1 (intensity>=0.5) = 0.705
+[olkavs_C221] mF1 (intensity>=1.0) = 0.203
+[olkavs_C221] mF1 (intensity>=2.0) = 0.000
+{'dataset': 'olkavs_E074', 'run': 'joint_tcn_scratch_fold3_all10_au12f', 'au': 'AU25', 'n_test': 86297, 'pcc': 0.511, 'mae': 0.449, 'prev_c': 0.36, 'f1_c': 0.614, 'macroF1_c': 0.688, 'always_active_f1_c': 0.529, 'f1_t0.5': 0.711, 'pos_t0.5': 0.532, 'f1_t1.0': 0.282, 'pos_t1.0': 0.311, 'f1_t2.0': 0.0, 'pos_t2.0': 0.044}
+{'dataset': 'olkavs_E074', 'run': 'joint_tcn_scratch_fold3_all10_au12f', 'au': 'AU26', 'n_test': 86297, 'pcc': 0.493, 'mae': 0.33, 'prev_c': 0.223, 'f1_c': 0.374, 'macroF1_c': 0.624, 'always_active_f1_c': 0.365, 'f1_t0.5': 0.637, 'pos_t0.5': 0.424, 'f1_t1.0': 0.218, 'pos_t1.0': 0.152, 'f1_t2.0': 0.0, 'pos_t2.0': 0.004}
+[olkavs_E074] mF1 (AU_c, 2 AUs) = 0.494   macro-F1 = 0.656   always-active = 0.447
+[olkavs_E074] mF1 (intensity>=0.5) = 0.674
+[olkavs_E074] mF1 (intensity>=1.0) = 0.250
+[olkavs_E074] mF1 (intensity>=2.0) = 0.000

@@ -1,0 +1,6 @@
+dataset,run,au,n_test,pcc,mae,prev_c,f1_c,macroF1_c,always_active_f1_c,f1_t0.5,pos_t0.5,f1_t1.0,pos_t1.0,f1_t2.0,pos_t2.0
+kmind,joint_tcn_scratch_fold4_featxlsr,AU12,45082,0.337,0.847,0.396,0.586,0.656,0.567,0.752,0.649,0.471,0.546,0.132,0.254
+kmind,joint_tcn_scratch_fold4_featxlsr,AU25,45082,0.54,0.451,0.271,0.559,0.65,0.427,0.686,0.443,0.513,0.232,0.238,0.041
+kmind,joint_tcn_scratch_fold4_featxlsr,AU26,45082,0.428,0.474,0.241,0.459,0.585,0.389,0.596,0.411,0.389,0.215,0.104,0.046
+olkavs,joint_tcn_scratch_fold4_featxlsr,AU25,63026,0.459,0.348,0.636,0.792,0.72,0.778,0.76,0.651,0.145,0.308,0.0,0.0
+olkavs,joint_tcn_scratch_fold4_featxlsr,AU26,63026,0.249,0.349,0.505,0.431,0.527,0.671,0.615,0.635,0.258,0.184,0.017,0.001

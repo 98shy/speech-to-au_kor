@@ -1,0 +1,4 @@
+dataset,run,au,n_test,pcc,mae,prev_c,f1_c,macroF1_c,always_active_f1_c,f1_t0.5,pos_t0.5,f1_t1.0,pos_t1.0,f1_t2.0,pos_t2.0
+kmind,kmind_tcn_finetune_fold0,AU12,39345,0.494,0.501,0.384,0.609,0.676,0.555,0.826,0.741,0.617,0.456,0.092,0.108
+kmind,kmind_tcn_finetune_fold0,AU25,39345,0.433,0.433,0.314,0.509,0.536,0.478,0.633,0.403,0.367,0.208,0.023,0.019
+kmind,kmind_tcn_finetune_fold0,AU26,39345,0.352,0.485,0.304,0.502,0.574,0.466,0.556,0.493,0.211,0.261,0.01,0.049

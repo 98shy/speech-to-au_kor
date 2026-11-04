@@ -1,0 +1,26 @@
+train 46 units 382290 frames 184427 masked-in
+val 10 units 119932 frames 46769 masked-in
+test 22 units 189359 frames 98199 masked-in
+label mean [1.15 0.58 0.58] std [0.87 0.62 0.61]
+ep1 train_loss 0.875 val_pcc 0.448
+ep2 train_loss 0.736 val_pcc 0.464
+ep3 train_loss 0.689 val_pcc 0.465
+ep4 train_loss 0.640 val_pcc 0.457
+ep5 train_loss 0.608 val_pcc 0.453
+ep6 train_loss 0.566 val_pcc 0.460
+ep7 train_loss 0.559 val_pcc 0.461
+ep8 train_loss 0.532 val_pcc 0.464
+ep9 train_loss 0.529 val_pcc 0.451
+{'dataset': 'kmind', 'run': 'joint_tcn_scratch_fold2', 'au': 'AU12', 'n_test': 35173, 'pcc': 0.294, 'mae': 0.715, 'prev_c': 0.467, 'f1_c': 0.616, 'macroF1_c': 0.388, 'always_active_f1_c': 0.637, 'f1_t0.5': 0.925, 'pos_t0.5': 0.861, 'f1_t1.0': 0.722, 'pos_t1.0': 0.56, 'f1_t2.0': 0.249, 'pos_t2.0': 0.14}
+{'dataset': 'kmind', 'run': 'joint_tcn_scratch_fold2', 'au': 'AU25', 'n_test': 35173, 'pcc': 0.49, 'mae': 0.483, 'prev_c': 0.326, 'f1_c': 0.582, 'macroF1_c': 0.678, 'always_active_f1_c': 0.492, 'f1_t0.5': 0.722, 'pos_t0.5': 0.517, 'f1_t1.0': 0.453, 'pos_t1.0': 0.34, 'f1_t2.0': 0.042, 'pos_t2.0': 0.046}
+{'dataset': 'kmind', 'run': 'joint_tcn_scratch_fold2', 'au': 'AU26', 'n_test': 35173, 'pcc': 0.368, 'mae': 0.48, 'prev_c': 0.245, 'f1_c': 0.391, 'macroF1_c': 0.607, 'always_active_f1_c': 0.394, 'f1_t0.5': 0.573, 'pos_t0.5': 0.363, 'f1_t1.0': 0.382, 'pos_t1.0': 0.157, 'f1_t2.0': 0.032, 'pos_t2.0': 0.02}
+[kmind] mF1 (AU_c, 3 AUs) = 0.530   macro-F1 = 0.558   always-active = 0.508
+[kmind] mF1 (intensity>=0.5) = 0.740
+[kmind] mF1 (intensity>=1.0) = 0.519
+[kmind] mF1 (intensity>=2.0) = 0.108
+{'dataset': 'olkavs', 'run': 'joint_tcn_scratch_fold2', 'au': 'AU25', 'n_test': 63026, 'pcc': 0.479, 'mae': 0.389, 'prev_c': 0.636, 'f1_c': 0.709, 'macroF1_c': 0.684, 'always_active_f1_c': 0.778, 'f1_t0.5': 0.629, 'pos_t0.5': 0.651, 'f1_t1.0': 0.074, 'pos_t1.0': 0.308, 'f1_t2.0': 0.0, 'pos_t2.0': 0.0}
+{'dataset': 'olkavs', 'run': 'joint_tcn_scratch_fold2', 'au': 'AU26', 'n_test': 63026, 'pcc': 0.333, 'mae': 0.317, 'prev_c': 0.505, 'f1_c': 0.496, 'macroF1_c': 0.564, 'always_active_f1_c': 0.671, 'f1_t0.5': 0.659, 'pos_t0.5': 0.635, 'f1_t1.0': 0.277, 'pos_t1.0': 0.184, 'f1_t2.0': 0.0, 'pos_t2.0': 0.001}
+[olkavs] mF1 (AU_c, 2 AUs) = 0.603   macro-F1 = 0.624   always-active = 0.725
+[olkavs] mF1 (intensity>=0.5) = 0.644
+[olkavs] mF1 (intensity>=1.0) = 0.176
+[olkavs] mF1 (intensity>=2.0) = 0.000
